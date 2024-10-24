@@ -6,5 +6,6 @@ export interface IInputProps {
 }
 
 export const MyInput = (props: IInputProps) => {
+    console.log(props);
   return <StyledInput type="number"></StyledInput>;
 };
