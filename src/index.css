@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: batFontLite;
+  src: url('./assets/skirmisher.ttf');
+}
+
 a {
   font-weight: 500;
   color: #646cff;

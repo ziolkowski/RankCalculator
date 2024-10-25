@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 export const colors = {
   darkGray: "#191919",
-  midGold: "#cca64b",
-  neonGreen: "#A4FFAF",
-  gray: "#817D92",
-  red: "#F64A4A",
-  almostWhite: "#E6E5EA",
+  red: "#f5c4bc",
+  almostWhite: "#E6E6E6",
+  green: "#bcf5c4",
 };
 
 export const Wrapper = styled.div`
@@ -34,6 +32,7 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
@@ -44,16 +43,21 @@ export const Inner = styled.div`
   align-items: center;
 `;
 
-export const HeaderText = styled.p`
-  margin: 10px 0 20px 0;
-  font-size: 36px;
-  color: ${colors.midGold};
+export const MyText = styled.p`
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  color: ${colors.darkGray};
   font-family: "batFontLite";
   letter-spacing: 10px;
 `;
 
-export const StyledInput = styled.input`
-  width: 200px;
-  height: 80px;
-  background-color: ${colors.almostWhite};
+export const ResultText = styled.p<{ $color: string }>`
+  text-align: center;
+  width: 100%;
+  font-size: 28px;
+  letter-spacing: 5px;
+  font-family: "batFontLite";
+  color: ${(props) => props.$color};
 `;
